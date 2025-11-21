@@ -27,8 +27,8 @@ export function Header() {
           <Link to="/tutor" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-smooth">
             Tutor
           </Link>
-          <Link to="/help" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-smooth">
-            Help
+          <Link to="/pricing" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-smooth">
+            Pricing
           </Link>
         </nav>
 
@@ -45,15 +45,6 @@ export function Header() {
               <Sun className="h-5 w-5" />
             )}
           </Button>
-
-          <div className="hidden md:flex items-center space-x-3">
-            <Link to="/auth/login">
-              <Button variant="ghost">Sign In</Button>
-            </Link>
-            <Link to="/auth/register">
-              <Button variant="default" className="gradient-brand">Get Started</Button>
-            </Link>
-          </div>
 
           {/* Mobile Menu Button */}
           <Button
@@ -93,20 +84,12 @@ export function Header() {
               Tutor
             </Link>
             <Link
-              to="/help"
+              to="/pricing"
               className="text-sm font-medium text-foreground/80 hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Help
+              Pricing
             </Link>
-            <div className="flex flex-col space-y-2 pt-4 border-t">
-              <Link to="/auth/login" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="ghost" className="w-full">Sign In</Button>
-              </Link>
-              <Link to="/auth/register" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="default" className="w-full gradient-brand">Get Started</Button>
-              </Link>
-            </div>
           </nav>
         </div>
       )}

@@ -10,7 +10,7 @@ import Index from "./pages/Index";
 import Marketplace from "./pages/Marketplace";
 import WhiteLabel from "./pages/WhiteLabel";
 import Tutor from "./pages/Tutor";
-import Help from "./pages/Help";
+import Pricing from "./pages/Pricing";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgotPassword from "./pages/auth/ForgotPassword";
@@ -34,8 +34,8 @@ const App = () => (
                 <Route path="/" element={<Index />} />
                 <Route path="/marketplace" element={<Marketplace />} />
                 <Route path="/white-label" element={<WhiteLabel />} />
-                <Route path="/tutor" element={<Tutor />} />
-                <Route path="/help" element={<Help />} />
+            <Route path="/tutor" element={<Tutor />} />
+            <Route path="/pricing" element={<Pricing />} />
                 <Route path="/auth/login" element={<Login />} />
                 <Route path="/auth/register" element={<Register />} />
                 <Route path="/auth/forgot-password" element={<ForgotPassword />} />
